@@ -7,7 +7,7 @@
     "test": "jest",
     "lint": "gulp lint",
     "compile": "babel src --out-dir lib && echo 'Successfully compiled'",
-    "prepublish": "npm run compile",
+    "prepare": "npm run compile",
     "ci:upload-coverage": "cat ./coverage/lcov.info | coveralls",
     "ci": "npm run lint && npm run compile && npm test -- --coverage && npm run ci:upload-coverage"
   },
